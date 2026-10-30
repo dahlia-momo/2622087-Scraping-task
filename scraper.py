@@ -72,7 +72,7 @@ while not url_queue.empty():
         title_text = soup.title.string.strip() if soup.title else "No Title"
         sitemap_dict[url] = title_text
 
-        # カウントを増やして何件目かを表示
+        # カウントを増やして何件目を取得したかを表示
         count += 1
         print(f"[{count}件目] {url} - {title_text}")
 
